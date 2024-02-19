@@ -1,0 +1,20 @@
+it('message', ()=>{
+    expect(actual).toBe(result)
+})
+
+"vitest --run --reporter verbose",
+remove --reporter verbose to get less details
+
+npm run test:watch
+
+AAA- Arrange, Act, Assert
+    Arrange - Define the testing env & values
+    Act - Run the actual code/function that should be tested
+    Assert - Evaluate the produced value/result and compare it to the expected value/result
+
+
+Error check 
+    const resultFn = () => {
+        fn()
+    };
+    expect(resultFn).toThrow();
