@@ -1,7 +1,7 @@
 it('message', ()=>{
     expect(actual).toBe(result)
 })
-
+"vitest --globals" - enables you to use 'it','expect'... type functions. 
 "vitest --run --reporter verbose",
 remove --reporter verbose to get less details
 
