@@ -25,6 +25,9 @@ afterAll(() => {
   console.log('afterAll');
 })
 
+//it.concurrent - run tests concurrently
+//describe.concurrent - run all the test in describe blocks concurrently
+
 
 it('should update the email', () => {
   const newTestEmail = 'test2@test.com';
