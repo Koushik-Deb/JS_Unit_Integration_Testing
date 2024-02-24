@@ -10,8 +10,10 @@ it('should transform a string to a number', () => {
     const result = transformToNumber(value);
 
     // Assert
-    expect(result).toBe(expectedResult);
-    expect(result).toBeTypeOf('number');
+    // expect(result).toBe(expectedResult);
+    // expect(result).toBeTypeOf('number');
+
+    expect(result).toBe(expectedResult).toBeTypeOf('number');
 });
 
 it('should transform a string with a leading zero to a number', () => {
@@ -29,10 +31,13 @@ it('should transform a string with a leading zero to a number', () => {
 it('should return NaN if the value is not a number', () => {
     // Arrange
     const value = 'invalid';
+    const value2 = { a: 1, b: 2 }
 
     // Act
     const result = transformToNumber(value);
+    const result2 = transformToNumber(value2);
 
     // Assert
     expect(result).toBeNaN();
+    expect(result2).toBeNaN();
 });
